@@ -51,7 +51,7 @@ exports.handler = function (event, context) {
           Message: "https://bit.ly/3dNr55p " + dt,
           Subject: "PS Is here",
           TopicArn:
-            "arn:aws:sns:us-east-1:216817049798:ps5hunter_stock_availability",
+            "arn:aws:sns:us-east-1:<accnum>:ps5hunter_stock_availability",
         };
         sns.publish(params, context.done);
       } else {
